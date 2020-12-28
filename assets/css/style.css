@@ -1,0 +1,16 @@
+h1.azrcrv-mm-admin, p.azrcrv-mm-admin{
+	background-color: red;
+	color: white;
+	text-align: center;
+	padding: 12px 0;
+}
+h1.azrcrv-mm-admin{
+	margin-bottom: none;
+}
+p.azrcrv-mm-admin{
+	margin-top: -10px;
+}
+h1.azrcrv-mm-user{
+}
+p.azrcrv-mm-user{
+}

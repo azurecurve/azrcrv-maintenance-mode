@@ -50,6 +50,9 @@ This plugin is developed for ClassicPress, but will likely work on WordPress.
 
 # Changelog
 
+### [Version 1.X.X](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/tag/v1.X.X)
+ * Update plugin images.
+
 ### [Version 1.0.0](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/tag/v1.0.0)
  * Initial release.
 

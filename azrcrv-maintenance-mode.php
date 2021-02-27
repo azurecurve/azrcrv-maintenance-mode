@@ -3,7 +3,7 @@
  * ------------------------------------------------------------------------------
  * Plugin Name: Maintenance Mode
  * Description: Enable maintenance mode to disable the front-end of your ClassicPress site.
- * Version: 1.0.1
+ * Version: 1.1.0
  * Author: azurecurve
  * Author URI: https://development.azurecurve.co.uk/classicpress-plugins/
  * Plugin URI: https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/
@@ -103,7 +103,7 @@ function azrcrv_mm_load_css(){
 function azrcrv_mm_get_option($option_name){
  
 	$defaults = array(
-						'enabled' => 1,
+						'enabled' => 0,
 						'maintenance-mode' => array(
 													'user' => array(
 																		'header' => 'Site Undergoing Maintenance',

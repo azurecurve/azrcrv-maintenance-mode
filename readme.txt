@@ -6,7 +6,7 @@ Tags:			admin,menu
 Author:			azurecurve
 Author URI:		https://development.azurecurve.co.uk/
 Plugin URI:		https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/
-Download link:	https://github.com/azurecurve/azrcrv-maintenance-mode/releases/download/v1.0.1/azrcrv-maintenance-mode
+Download link:	https://github.com/azurecurve/azrcrv-maintenance-mode/releases/download/v1.1.0/azrcrv-maintenance-mode.zip
 Requires PHP:	5.6
 Requires:		1.0.0
 Tested:			4.9.99

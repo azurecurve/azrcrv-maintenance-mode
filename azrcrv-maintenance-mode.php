@@ -61,7 +61,7 @@ function azrcrv_mm_load_languages() {
 /**
  * Custom plugin image path.
  *
- * @since 1.12.0
+ * @since 1.0.0
  *
  */
 function azrcrv_mm_custom_image_path($path){
@@ -74,7 +74,7 @@ function azrcrv_mm_custom_image_path($path){
 /**
  * Custom plugin image url.
  *
- * @since 1.12.0
+ * @since 1.0.0
  *
  */
 function azrcrv_mm_custom_image_url($url){
@@ -97,7 +97,7 @@ function azrcrv_mm_load_css(){
 /**
  * Get options including defaults.
  *
- * @since 1.12.0
+ * @since 1.0.0
  *
  */
 function azrcrv_mm_get_option($option_name){

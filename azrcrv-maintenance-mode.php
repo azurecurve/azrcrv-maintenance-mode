@@ -3,7 +3,7 @@
  * ------------------------------------------------------------------------------
  * Plugin Name: Maintenance Mode
  * Description: Enable maintenance mode to disable the front-end of your ClassicPress site.
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: azurecurve
  * Author URI: https://development.azurecurve.co.uk/classicpress-plugins/
  * Plugin URI: https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/
@@ -177,8 +177,8 @@ function azrcrv_mm_create_admin_menu(){
 	$options = azrcrv_mm_get_option('azrcrv-mm');
 	
 	add_submenu_page("azrcrv-plugin-menu"
-						,__("Maintenance Mode Settings", "maintenance-mode")
-						,__("Maintenance Mode", "maintenance-mode")
+						,esc_html__("Maintenance Mode Settings", "maintenance-mode")
+						,esc_html__("Maintenance Mode", "maintenance-mode")
 						,'manage_options'
 						,'azrcrv-mm'
 						,'azrcrv_mm_display_options');
@@ -193,7 +193,7 @@ function azrcrv_mm_create_admin_menu(){
 function azrcrv_mm_display_options(){
 
 	if (!current_user_can('manage_options')) {
-		wp_die(__('You do not have sufficient permissions to access this page.', 'maintenance-mode'));
+		wp_die(esc_html__('You do not have sufficient permissions to access this page.', 'maintenance-mode'));
 	}
 	
 	$options = azrcrv_mm_get_option('azrcrv-mm');
@@ -202,7 +202,10 @@ function azrcrv_mm_display_options(){
 	
 	echo '<div id="azrcrv-mm-general" class="wrap azrcrv-mm">
 		<fieldset>
-			<h1>'.esc_html(get_admin_page_title()).'</h1>';
+			<h1>
+				<a href="https://development.azurecurve.co.uk/classicpress-plugins/"><img src="'.plugins_url('/pluginmenu/images/logo.svg', __FILE__).'" style="padding-right: 6px; height: 20px; width: 20px;" alt="azurecurve" /></a>
+				'.esc_html__(get_admin_page_title()).'
+			</h1>';
 			
 			if(isset($_GET['settings-updated'])){
 				echo '<div class="notice notice-success is-dismissible">
@@ -219,26 +222,26 @@ function azrcrv_mm_display_options(){
 					
 					<tr>
 						<th scope="row"><label for="widget-width">
-							'.__('Enable maintenance mode', 'maintenance-mode').'
+							'.esc_html__('Enable maintenance mode', 'maintenance-mode').'
 						</th>
 						<td>
 							<input name="enabled" type="checkbox" id="enabled" value="1" '.checked('1', $options['enabled'], false).' />
 							<label for="enabled"><span class="description">
-								'.__('Enable maintenance mode. Only a logged in administrator will be able to access the site.', 'maintenance-mode').'
+								'.esc_html__('Enable maintenance mode. Only a logged in administrator will be able to access the site.', 'maintenance-mode').'
 							</span></label
 						</td>
 					</tr>
 					
 					<tr>
 						<th scope="row" colspan="2">
-							<h3>'.__('Admin', 'maintenance-mode').'</h3>
+							<h3>'.esc_html__('Admin', 'maintenance-mode').'</h3>
 						</th>
 					</tr>
 					
 					<tr>
 						<th scope="row">
 							<label for="maintenance-mode-admin-header">
-								'.__('Header', 'maintenance-mode').'
+								'.esc_html__('Header', 'maintenance-mode').'
 							</label>
 						</th>
 						<td>
@@ -249,7 +252,7 @@ function azrcrv_mm_display_options(){
 					<tr>
 						<th scope="row">
 							<label for="maintenance-mode-admin-message">
-								'.__('Message', 'maintenance-mode').'
+								'.esc_html__('Message', 'maintenance-mode').'
 							</label>
 						</th>
 						<td>
@@ -259,14 +262,14 @@ function azrcrv_mm_display_options(){
 					
 					<tr>
 						<th scope="row" colspan="2">
-							<h3>'.__('User', 'maintenance-mode').'</h3>
+							<h3>'.esc_html__('User', 'maintenance-mode').'</h3>
 						</th>
 					</tr>
 					
 					<tr>
 						<th scope="row">
 							<label for="maintenance-mode-user-header">
-								'.__('Header', 'maintenance-mode').'
+								'.esc_html__('Header', 'maintenance-mode').'
 							</label>
 						</th>
 						<td>
@@ -277,7 +280,7 @@ function azrcrv_mm_display_options(){
 					<tr>
 						<th scope="row">
 							<label for="maintenance-mode-user-message">
-								'.__('Message', 'maintenance-mode').'
+								'.esc_html__('Message', 'maintenance-mode').'
 							</label>
 						</th>
 						<td>
@@ -287,7 +290,7 @@ function azrcrv_mm_display_options(){
 					
 				</table>
 				
-				<input type="submit" value="'.__('Save Changes', 'maintenance-mode').'" class="button-primary"/>
+				<input type="submit" value="'.esc_html__('Save Changes', 'maintenance-mode').'" class="button-primary"/>
 				
 			</form>
 		</fieldset>

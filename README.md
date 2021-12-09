@@ -1,4 +1,4 @@
-# Maintenance Mode plugin for ClassicPress# [Maintenance Mode](https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/)
+# [Maintenance Mode](https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/)
 ![Plugin Banner](/assets/pluginimages/banner-1544x500.png)
 
 # Description

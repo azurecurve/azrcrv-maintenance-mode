@@ -52,7 +52,7 @@ This plugin is developed for ClassicPress, but will likely work on WordPress.
  
 ### [Version 1.3.0](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/tag/v1.3.0)
  * Fix bug with save of settings.
- * Change langauge domain to avoid possible conflicts.
+ * Change language domain to avoid possible conflicts.
  * Restructure settings page.
  * Improve handling of output.
  

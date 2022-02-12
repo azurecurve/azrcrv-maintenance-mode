@@ -1,11 +1,11 @@
 <?php
+
 /**
-Menu Version 3.0
+ * Menu Version 3.0
  */
 
 add_action( 'admin_menu', 'azrcrv_add_plugin_menu' );
 add_action( 'admin_head', 'azrcrv_plugin_menu_load_css' );
-
 
 /**
  * Add azurecurve menu.
@@ -16,7 +16,7 @@ if ( ! function_exists( 'azrcrv_add_plugin_menu' ) ) {
 	function azrcrv_add_plugin_menu() {
 		global $admin_page_hooks;
 
-		if ( empty( $admin_page_hooks['azrcrv-menu-test'] ) ) {
+		if ( empty( $admin_page_hooks['azrcrv-plugin-menu'] ) ) {
 			add_menu_page(
 				'azurecurve Plugins',
 				'azurecurve',
@@ -44,7 +44,9 @@ if ( ! function_exists( 'azrcrv_add_plugin_menu' ) ) {
  */
 if ( ! function_exists( 'azrcrv_plugin_menu_load_css' ) ) {
 	function azrcrv_plugin_menu_load_css() {
-		wp_enqueue_style( 'azrcrv-plugin-index', plugins_url( 'css/style.css', __FILE__ ) );
+		if ( isset( $_GET['page'] ) && ( $_GET['page'] == 'azrcrv-plugin-menu' ) ) {
+			wp_enqueue_style( 'azrcrv-plugin-index', plugins_url( 'css/style.css', __FILE__ ), array(), '2.0.0', false );
+		}
 	}
 }
 
@@ -66,7 +68,14 @@ if ( ! function_exists( 'azrcrv_display_plugin_menu' ) ) {
 		foreach ( $plugin_array as $plugin_name => $plugin_details ) {
 			if ( $plugin_details['retired'] == 0 ) {
 				if ( is_plugin_active( $plugin_details['plugin_link'] ) ) {
-					echo '<a href="' . esc_url_raw( $plugin_details['admin_URL'] ) . '" class="azrcrv-plugin-index">' . esc_html( $plugin_name ) . '</a>';
+					$alternative_color = '';
+					if ( isset( $plugin_details['bright'] ) and $plugin_details['bright'] == 1 ) {
+						$alternative_color = 'bright-';
+					}
+					if ( isset( $plugin_details['premium'] ) and $plugin_details['premium'] == 1 ) {
+						$alternative_color = 'premium-';
+					}
+					echo "<a href='{$plugin_details['admin_URL']}' class='azrcrv-{$alternative_color}plugin-index'>{$plugin_name}</a>";
 				}
 			}
 		}
@@ -82,7 +91,14 @@ if ( ! function_exists( 'azrcrv_display_plugin_menu' ) ) {
 		foreach ( $plugin_array as $plugin_name => $plugin_details ) {
 			if ( $plugin_details['retired'] == 0 ) {
 				if ( ! is_plugin_active( $plugin_details['plugin_link'] ) ) {
-					echo '<a href="' . esc_url_raw( $plugin_details['dev_URL'] ) . '" class="azrcrv-plugin-index">' . esc_html( $plugin_name ) . '</a>';
+					$alternative_color = '';
+					if ( isset( $plugin_details['bright'] ) and $plugin_details['bright'] == 1 ) {
+						$alternative_color = 'bright-';
+					}
+					if ( isset( $plugin_details['premium'] ) and $plugin_details['premium'] == 1 ) {
+						$alternative_color = 'premium-';
+					}
+					echo "<a href='{$plugin_details['dev_URL']}' class='azrcrv-{$alternative_color}plugin-index'>{$plugin_name}</a>";
 					$countofplugins += 1;
 				}
 			}
@@ -307,11 +323,17 @@ if ( ! function_exists( 'azrcrv_populate_plugin_menu_mm' ) ) {
 				'retired'     => 0,
 				'updated'     => '2020-04-04',
 			),
+			'Load Admin CSS'             => array(
+				'plugin_link' => 'azrcrv-load-admin-css/azrcrv-load-admin-css.php',
+				'admin_URL'   => 'admin.php?page=azrcrv-lacss',
+				'dev_URL'     => 'https://development.azurecurve.co.uk/classicpress-plugins/load-admin-css/',
+				'retired'     => 0,
+				'updated'     => '2022-01-31',
+			),
 			'Loop Injection'             => array(
 				'plugin_link' => 'azrcrv-loop-injection/azrcrv-loop-injection.php',
 				'admin_URL'   => 'admin.php?page=azrcrv-li',
 				'dev_URL'     => 'https://development.azurecurve.co.uk/classicpress-plugins/loop-injection/',
-				'text'        => 'Loop Injection',
 				'retired'     => 0,
 				'updated'     => '2020-04-04',
 			),
@@ -333,7 +355,6 @@ if ( ! function_exists( 'azrcrv_populate_plugin_menu_mm' ) ) {
 				'plugin_link' => 'azrcrv-mobile-detection/azrcrv-mobile-detection.php',
 				'admin_URL'   => 'admin.php?page=azrcrv-md',
 				'dev_URL'     => 'https://development.azurecurve.co.uk/classicpress-plugins/mobile-detection/',
-				'text'        => 'Mobile Detection',
 				'retired'     => 0,
 				'updated'     => '2020-04-04',
 			),
@@ -341,7 +362,6 @@ if ( ! function_exists( 'azrcrv_populate_plugin_menu_mm' ) ) {
 				'plugin_link' => 'azrcrv-multisite-favicon/azrcrv-multisite-favicon.php',
 				'admin_URL'   => 'admin.php?page=azrcrv-msf',
 				'dev_URL'     => 'https://development.azurecurve.co.uk/classicpress-plugins/multisite-favicon/',
-				'text'        => 'Multisite Favicon',
 				'retired'     => 0,
 				'updated'     => '2020-04-04',
 			),
@@ -442,6 +462,13 @@ if ( ! function_exists( 'azrcrv_populate_plugin_menu_mm' ) ) {
 				'dev_URL'     => 'https://development.azurecurve.co.uk/classicpress-plugins/snippets/',
 				'retired'     => 0,
 				'updated'     => '2020-10-28',
+			),
+			'Strong Password Generator'  => array(
+				'plugin_link' => 'azrcrv-strong-password-generator/azrcrv-strong-password-generator.php',
+				'admin_URL'   => 'admin.php?page=azrcrv-spg',
+				'dev_URL'     => 'https://development.azurecurve.co.uk/classicpress-plugins/strong-password-generator/',
+				'retired'     => 0,
+				'updated'     => '2021-12-20',
 			),
 			'Tag Cloud'                  => array(
 				'plugin_link' => 'azrcrv-tag-cloud/azrcrv-tag-cloud.php',

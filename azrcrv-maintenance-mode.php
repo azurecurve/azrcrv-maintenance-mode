@@ -3,7 +3,7 @@
  * ------------------------------------------------------------------------------
  * Plugin Name: Maintenance Mode
  * Description: Enable maintenance mode to disable the front-end of your ClassicPress site.
- * Version: 1.3.0
+ * Version: 1.3.1
  * Author: azurecurve
  * Author URI: https://development.azurecurve.co.uk/classicpress-plugins/
  * Plugin URI: https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/
@@ -386,7 +386,7 @@ function azrcrv_mm_display_options() {
 						<td scope="row" colspan=2>
 						
 							<p>' .
-								sprintf( esc_html__( '%1$s was one of the first plugin developers to start developing for Classicpress; all plugins are available from %2$s and are integrated with the %3$s plugin for fully integrated, no hassle, updates.', 'azrcrv-mm' ), '<strong>azurecurve | Development</strong>', '<a href="https://development.azurecurve.co.uk/classicpress-plugins/">azurecurve | Development</a>', '<a href="https://directory.classicpress.net/plugins/update-manager/">Update Manager</a>' )
+								sprintf( esc_html__( '%1$s was one of the first plugin developers to start developing for ClassicPress; all plugins are available from %2$s and are integrated with the %3$s plugin for fully integrated, no hassle, updates.', 'azrcrv-mm' ), '<strong>azurecurve | Development</strong>', '<a href="https://development.azurecurve.co.uk/classicpress-plugins/">azurecurve | Development</a>', '<a href="https://directory.classicpress.net/plugins/update-manager/">Update Manager</a>' )
 							. '</p>
 							<p>' .
 								sprintf( esc_html__( 'Other plugins available from %s are:', 'azrcrv-mm' ), '<strong>azurecurve | Development</strong>' )

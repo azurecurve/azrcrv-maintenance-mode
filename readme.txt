@@ -1,12 +1,12 @@
 === Maintenance Mode ===
 
 Description:	Enable maintenance mode to disable the front-end of your ClassicPress site.
-Version:		1.3.0
+Version:		1.3.1
 Tags:			admin,menu 
 Author:			azurecurve
 Author URI:		https://development.azurecurve.co.uk/
 Plugin URI:		https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/
-Download link:	https://github.com/azurecurve/azrcrv-maintenance-mode/releases/download/v1.3.0/azrcrv-maintenance-mode.zip
+Download link:	https://github.com/azurecurve/azrcrv-maintenance-mode/releases/download/v1.3.1/azrcrv-maintenance-mode.zip
 Requires PHP:	5.6
 Requires:		1.0.0
 Tested:			4.9.99
@@ -50,6 +50,11 @@ This plugin is developed for ClassicPress, but will likely work on WordPress.
 
 # Changelog
  
+### [Version 1.3.1](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/tag/v1.3.1)
+ * Update readme files.
+ * Update language template.
+ * Fix bug with azurecurve menu.
+ 
 ### [Version 1.3.0](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/tag/v1.3.0)
  * Fix bug with save of settings.
  * Change language domain to avoid possible conflicts.
@@ -79,7 +84,7 @@ This plugin is developed for ClassicPress, but will likely work on WordPress.
 
 # About azurecurve
 
-**azurecurve** was one of the first plugin developers to start developing for Classicpress; all plugins are available from [azurecurve Development](https://development.azurecurve.co.uk/) and are integrated with the [Update Manager plugin](https://directory.classicpress.net/plugins/update-manager) for fully integrated, no hassle, updates.
+**azurecurve** was one of the first plugin developers to start developing for ClassicPress; all plugins are available from [azurecurve Development](https://development.azurecurve.co.uk/) and are integrated with the [Update Manager plugin](https://directory.classicpress.net/plugins/update-manager) for fully integrated, no hassle, updates.
 
 The other plugins available from **azurecurve** are:
  * Add Open Graph Tags - [details](https://development.azurecurve.co.uk/classicpress-plugins/add-open-graph-tags/) / [download](https://github.com/azurecurve/azrcrv-add-open-graph-tags/releases/latest/)
@@ -106,8 +111,8 @@ The other plugins available from **azurecurve** are:
  * Icons - [details](https://development.azurecurve.co.uk/classicpress-plugins/icons/) / [download](https://github.com/azurecurve/azrcrv-icons/releases/latest/)
  * Images - [details](https://development.azurecurve.co.uk/classicpress-plugins/images/) / [download](https://github.com/azurecurve/azrcrv-images/releases/latest/)
  * Insult Generator - [details](https://development.azurecurve.co.uk/classicpress-plugins/insult-generator/) / [download](https://github.com/azurecurve/azrcrv-insult-generator/releases/latest/)
+ * Load Admin CSS - [details](https://development.azurecurve.co.uk/classicpress-plugins/load-admin-css/) / [download](https://github.com/azurecurve/azrcrv-load-admin-css/releases/latest/)
  * Loop Injection - [details](https://development.azurecurve.co.uk/classicpress-plugins/loop-injection/) / [download](https://github.com/azurecurve/azrcrv-loop-injection/releases/latest/)
- * Maintenance Mode - [details](https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/) / [download](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/latest/)
  * Markdown - [details](https://development.azurecurve.co.uk/classicpress-plugins/markdown/) / [download](https://github.com/azurecurve/azrcrv-markdown/releases/latest/)
  * Mobile Detection - [details](https://development.azurecurve.co.uk/classicpress-plugins/mobile-detection/) / [download](https://github.com/azurecurve/azrcrv-mobile-detection/releases/latest/)
  * Multisite Favicon - [details](https://development.azurecurve.co.uk/classicpress-plugins/multisite-favicon/) / [download](https://github.com/azurecurve/azrcrv-multisite-favicon/releases/latest/)
@@ -136,3 +141,4 @@ The other plugins available from **azurecurve** are:
  * URL Shortener - [details](https://development.azurecurve.co.uk/classicpress-plugins/url-shortener/) / [download](https://github.com/azurecurve/azrcrv-url-shortener/releases/latest/)
  * Username Protection - [details](https://development.azurecurve.co.uk/classicpress-plugins/username-protection/) / [download](https://github.com/azurecurve/azrcrv-username-protection/releases/latest/)
  * Widget Announcements - [details](https://development.azurecurve.co.uk/classicpress-plugins/widget-announcements/) / [download](https://github.com/azurecurve/azrcrv-widget-announcements/releases/latest/)
+ 

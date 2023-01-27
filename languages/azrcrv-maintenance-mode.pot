@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Maintenance Mode\n"
-"POT-Creation-Date: 2021-12-27 18:03+0000\n"
+"POT-Creation-Date: 2023-01-27 18:38+0000\n"
 "PO-Revision-Date: 2019-02-24 18:44+0000\n"
 "Last-Translator: \n"
 "Language-Team: translate@azurecurve.co.uk\n"
@@ -11,58 +11,121 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: azrcrv-maintenance-mode.php:161
+#: azrcrv-maintenance-mode.php:202
 msgid "Settings"
 msgstr ""
 
-#: azrcrv-maintenance-mode.php:180
+#: azrcrv-maintenance-mode.php:221
 msgid "Maintenance Mode Settings"
 msgstr ""
 
-#: azrcrv-maintenance-mode.php:181
+#: azrcrv-maintenance-mode.php:222
 msgid "Maintenance Mode"
 msgstr ""
 
-#: azrcrv-maintenance-mode.php:196
+#: azrcrv-maintenance-mode.php:238
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
-#: azrcrv-maintenance-mode.php:225
+#: azrcrv-maintenance-mode.php:255
+msgid "Settings have been saved."
+msgstr ""
+
+#: azrcrv-maintenance-mode.php:259
+msgid "Plugin Settings"
+msgstr ""
+
+#: azrcrv-maintenance-mode.php:264
 msgid "Enable maintenance mode"
 msgstr ""
 
-#: azrcrv-maintenance-mode.php:230
+#: azrcrv-maintenance-mode.php:269
 msgid ""
 "Enable maintenance mode. Only a logged in administrator will be able to "
 "access the site."
 msgstr ""
 
-#: azrcrv-maintenance-mode.php:237
+#: azrcrv-maintenance-mode.php:276
 msgid "Admin"
 msgstr ""
 
-#: azrcrv-maintenance-mode.php:244 azrcrv-maintenance-mode.php:272
+#: azrcrv-maintenance-mode.php:282
+msgid "Disable admin banner"
+msgstr ""
+
+#: azrcrv-maintenance-mode.php:287
+msgid ""
+"Maintenance mode is still enabled, but the admin banner is disabled so "
+"admins won't see the warning banner."
+msgstr ""
+
+#: azrcrv-maintenance-mode.php:295 azrcrv-maintenance-mode.php:323
 msgid "Header"
 msgstr ""
 
-#: azrcrv-maintenance-mode.php:255 azrcrv-maintenance-mode.php:283
+#: azrcrv-maintenance-mode.php:306 azrcrv-maintenance-mode.php:334
 msgid "Message"
 msgstr ""
 
-#: azrcrv-maintenance-mode.php:265
+#: azrcrv-maintenance-mode.php:316
 msgid "User"
 msgstr ""
 
-#: azrcrv-maintenance-mode.php:293
-msgid "Save Changes"
+#: azrcrv-maintenance-mode.php:344
+msgid "Instructions"
 msgstr ""
 
-#: azrcrv-maintenance-mode.php:310
+#: azrcrv-maintenance-mode.php:351
+msgid "Maintenance Mode Usage"
+msgstr ""
+
+#: azrcrv-maintenance-mode.php:362
+msgid ""
+"Mark the enable checkbox on the Settings tab and the site will be put "
+"into maintenance mode displaying the configured messages."
+msgstr ""
+
+#: azrcrv-maintenance-mode.php:365
+msgid "Unmark the enable checkbox to disable maintenance mode."
+msgstr ""
+
+#: azrcrv-maintenance-mode.php:394
+msgid "Other Plugins"
+msgstr ""
+
+#: azrcrv-maintenance-mode.php:402
+#, php-format
+msgid ""
+"%1$s was one of the first plugin developers to start developing for "
+"ClassicPress; all plugins are available from %2$s and are integrated "
+"with the %3$s plugin for fully integrated, no hassle, updates."
+msgstr ""
+
+#: azrcrv-maintenance-mode.php:405
+#, php-format
+msgid "Other plugins available from %s are:"
+msgstr ""
+
+#: azrcrv-maintenance-mode.php:473
+msgid "Save Settings"
+msgstr ""
+
+#: azrcrv-maintenance-mode.php:477
+msgid "Support"
+msgstr ""
+
+#: azrcrv-maintenance-mode.php:488
+msgid ""
+"You can help support the development of our free plugins by donating a "
+"small amount of money."
+msgstr ""
+
+#: azrcrv-maintenance-mode.php:507
 msgid "You do not have permissions to perform this action"
 msgstr ""
 

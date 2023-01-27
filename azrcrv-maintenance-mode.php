@@ -3,7 +3,7 @@
  * ------------------------------------------------------------------------------
  * Plugin Name: Maintenance Mode
  * Description: Enable maintenance mode to disable the front-end of your ClassicPress site.
- * Version: 1.3.1
+ * Version: 1.4.0
  * Author: azurecurve
  * Author URI: https://development.azurecurve.co.uk/classicpress-plugins/
  * Plugin URI: https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/
@@ -152,6 +152,7 @@ function azrcrv_mm_get_option( $option_name ) {
 				'message' => 'This site is currently undergoing maintenance. Please check back later.',
 			),
 			'admin' => array(
+				'disabled'  => 0,
 				'header'  => 'Maintenance Mode Enabled',
 				'message' => 'This site is currently undergoing maintenance and is only available to admin users.',
 			),
@@ -274,6 +275,18 @@ function azrcrv_mm_display_options() {
 						<th scope="row" colspan=2 class="section-heading">
 							<h3>' . esc_html__( 'Admin', 'azrcrv-mm' ) . '</h3>
 						</th>
+					</tr>
+						
+					<tr>
+						<th scope="row"><label for="widget-width">
+							' . esc_html__( 'Disable admin banner', 'azrcrv-mm' ) . '
+						</th>
+						<td>
+							<input name="maintenance-mode-admin-disabled" type="checkbox" id="maintenance-mode-admin-disabled" value="1" ' . checked( '1', $options['maintenance-mode']['admin']['disabled'], false ) . ' />
+							<label for="maintenance-mode-admin-disabled"><span class="description">
+								' . esc_html__( 'Maintenance mode is still enabled, but the admin banner is disabled so admins won\'t see the warning banner.', 'azrcrv-mm' ) . '
+							</span></label
+						</td>
 					</tr>
 					
 					<tr>
@@ -504,6 +517,13 @@ function azrcrv_mm_save_options() {
 			$options[ $option_name ] = 0;
 		}
 
+		$option_name = 'maintenance-mode-admin-disabled';
+		if ( isset( $_POST[ $option_name ] ) ) {
+			$options[ 'maintenance-mode']['admin']['disabled' ] = 1;
+		} else {
+			$options[ 'maintenance-mode']['admin']['disabled' ] = 0;
+		}
+
 		$option_name                                    = 'maintenance-mode-admin-header';
 		$options['maintenance-mode']['admin']['header'] = sanitize_text_field( wp_unslash( $_POST[ $option_name ] ) );
 
@@ -538,11 +558,41 @@ function azrcrv_mm_maintenance_mode() {
 	$options = azrcrv_mm_get_option( 'azrcrv-mm' );
 
 	if ( $options['enabled'] == 1 ) {
+		
 		if ( current_user_can( 'manage_options' ) ) {
-			echo '<h1 class="azrcrv-mm-admin">' . esc_html( wp_unslash( $options['maintenance-mode']['admin']['header'] ) ) . '</h1><p class="azrcrv-mm-admin">' . esc_html( wp_unslash( $options['maintenance-mode']['admin']['message'] ) ) . '</p>';
+			
+			// display admin message
+			
+			if ( $options['maintenance-mode']['admin']['disabled'] == 0 ) {
+				
+				if ( strlen( $options['maintenance-mode']['admin']['header'] ) > 0 ) {
+					echo '<h1 class="azrcrv-mm-admin">' . esc_html( wp_unslash( $options['maintenance-mode']['admin']['header'] ) ) . '</h1>';
+				}
+				
+				if ( strlen( $options['maintenance-mode']['admin']['message'] ) > 0 ) {
+					echo '<p class="azrcrv-mm-admin">' . esc_html( wp_unslash( $options['maintenance-mode']['admin']['message'] ) ) . '</p>';
+				}
+				
+			}
+			
 		} else {
-			wp_die( '<h1 class="azrcrv-mm-user">' . esc_html( wp_unslash( $options['maintenance-mode']['user']['header'] ) ) . '</h1><p class="azrcrv-mm-user">' . esc_html( wp_unslash( $options['maintenance-mode']['user']['message'] ) ) . '</p>' );
+		
+			// die and display user message
+			
+			$user_message = '';
+			
+			if ( strlen( $options['maintenance-mode']['user']['header'] ) > 0 ) {
+				$user_message .= '<h1 class="azrcrv-mm-user">' . esc_html( wp_unslash( $options['maintenance-mode']['user']['header'] ) ) . '</h1>';
+			}
+			
+			if ( strlen( $options['maintenance-mode']['user']['message'] ) > 0 ) {
+				$user_message .= '<p class="azrcrv-mm-user">' . esc_html( wp_unslash( $options['maintenance-mode']['user']['message'] ) ) . '</p>';
+			}
+			
+			wp_die ( $user_message );
+			
 		}
+		
 	}
 
 }

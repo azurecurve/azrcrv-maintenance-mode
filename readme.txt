@@ -1,13 +1,14 @@
 === Maintenance Mode ===
 
 Description:	Enable maintenance mode to disable the front-end of your ClassicPress site.
-Version:		1.3.1
-Tags:			admin,menu 
+Version:		1.4.0
+Tags:			admin,maintenance
 Author:			azurecurve
 Author URI:		https://development.azurecurve.co.uk/
 Plugin URI:		https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/
-Download link:	https://github.com/azurecurve/azrcrv-maintenance-mode/releases/download/v1.3.1/azrcrv-maintenance-mode.zip
+Download link:	https://github.com/azurecurve/azrcrv-maintenance-mode/releases/download/v1.4.0/azrcrv-maintenance-mode.zip
 Requires PHP:	5.6
+Requires CP:	1.0
 Requires:		1.0.0
 Tested:			4.9.99
 Text Domain:	azrcrv-mm
@@ -49,6 +50,11 @@ This plugin is developed for ClassicPress, but will likely work on WordPress.
 == Changelog ==
 
 # Changelog
+ 
+### [Version 1.4.0](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/tag/v1.4.0)
+ * Add option to disable admin banner.
+ * Change so empty title or detail of banner isn't displayed.
+ * Update language template.
  
 ### [Version 1.3.1](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/tag/v1.3.1)
  * Update readme files.

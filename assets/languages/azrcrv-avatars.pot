@@ -1,0 +1,172 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Avatars\n"
+"POT-Creation-Date: 2022-03-02 20:55+0000\n"
+"PO-Revision-Date: 2019-03-02 15:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: translate@azurecurve.co.uk\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/azurecurve-menu.php:83 includes/tab-other-plugins.php:43
+#, php-format
+msgid ""
+"%s was one of the first plugin developers to start developing for "
+"ClassicPress; all plugins are available from %s and are integrated with the "
+"%s plugin for fully integrated, no hassle, updates."
+msgstr ""
+
+#: includes/azurecurve-menu.php:86
+#, php-format
+msgid "The %s plugins active on your site are:"
+msgstr ""
+
+#: includes/azurecurve-menu.php:145
+#, php-format
+msgid "The other plugins available from %s are:"
+msgstr ""
+
+#: includes/azurecurve-tabs-output.php:36 includes/tabs-output.php:75
+msgid "Support"
+msgstr ""
+
+#: includes/azurecurve-tabs-output.php:47 includes/tabs-output.php:86
+msgid ""
+"You can help support the development of our free plugins by donating a "
+"small amount of money."
+msgstr ""
+
+#: includes/functions-menu.php:26 includes/functions-menu.php:42
+#: includes/tab-settings.php:17
+msgid "Settings"
+msgstr ""
+
+#: includes/functions-settings.php:39
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: includes/functions-settings.php:54
+msgid "Settings have been saved."
+msgstr ""
+
+#: includes/functions-settings.php:76
+msgid "You do not have permissions to perform this action"
+msgstr ""
+
+#: includes/plugin-functionality.php:181
+msgid "Profile Picture"
+msgstr ""
+
+#: includes/plugin-functionality.php:183
+msgid "Uploading a new image will replace the current profile picture."
+msgstr ""
+
+#: includes/plugin-functionality.php:187
+msgid "Upload a new profile picture"
+msgstr ""
+
+#: includes/plugin-functionality.php:197 includes/tab-settings.php:74
+msgid "Upload avatar"
+msgstr ""
+
+#: includes/plugin-functionality.php:198 includes/tab-settings.php:75
+msgid "Remove avatar"
+msgstr ""
+
+#: includes/plugin-functionality.php:199
+msgid ""
+"Upload, choose or remove your profile picture; save your profile to confirm "
+"the change."
+msgstr ""
+
+#: includes/tab-instructions.php:16
+msgid "Instructions"
+msgstr ""
+
+#: includes/tab-instructions.php:24
+msgid "Custom Avatar"
+msgstr ""
+
+#: includes/tab-instructions.php:35
+#, php-format
+msgid ""
+"A custom avatar can be uploaded on the %s Settings page located on the %s "
+"menu."
+msgstr ""
+
+#: includes/tab-instructions.php:40
+msgid ""
+"Once a custom avatar has been uploaded, it can be selected as the default "
+"on the Discussions page on the Settings menu."
+msgstr ""
+
+#: includes/tab-instructions.php:52
+msgid "User Avatar"
+msgstr ""
+
+#: includes/tab-instructions.php:63
+msgid ""
+"Users can set an avatar of their own on their Profile page; administrators "
+"can set or change a user's avatar on the Edit User page."
+msgstr ""
+
+#: includes/tab-instructions.php:67
+msgid ""
+"If no user avatar is specified, the default avatar selected on the "
+"Discussions page will be used."
+msgstr ""
+
+#: includes/tab-other-plugins.php:34
+msgid "Other Plugins"
+msgstr ""
+
+#: includes/tab-other-plugins.php:46
+#, php-format
+msgid "Other plugins available from %s, which you are not using, are:"
+msgstr ""
+
+#: includes/tab-settings.php:26
+msgid ""
+"Avatars allows the admin to specify a default avatar and allows users to "
+"upload their own avatar."
+msgstr ""
+
+#: includes/tab-settings.php:37 includes/tab-settings.php:45
+msgid "Use local avatars only?"
+msgstr ""
+
+#: includes/tab-settings.php:61
+msgid "Upload custom default avatar?"
+msgstr ""
+
+#: includes/tab-settings.php:80
+msgid "Upload, choose or remove the custom avatar."
+msgstr ""
+
+#: includes/tabs-output.php:66
+msgid "Save Settings"
+msgstr ""
+
+#: libraries/updateclient/UpdateClient.class.php:191
+msgid "Compatible up to:"
+msgstr ""
+
+#: libraries/updateclient/UpdateClient.class.php:192
+msgid "Reviews"
+msgstr ""
+
+#: libraries/updateclient/UpdateClient.class.php:193
+msgid "Read all reviews"
+msgstr ""
+
+#: libraries/updateclient/UpdateClient.class.php:383
+msgid "View details"
+msgstr ""

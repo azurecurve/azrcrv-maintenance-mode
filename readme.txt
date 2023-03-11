@@ -1,18 +1,18 @@
 === Maintenance Mode ===
 
 Description:	Enable maintenance mode to disable the front-end of your ClassicPress site.
-Version:		1.4.0
+Version:		2.0.0
 Tags:			admin,maintenance
 Author:			azurecurve
 Author URI:		https://development.azurecurve.co.uk/
 Plugin URI:		https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/
-Download link:	https://github.com/azurecurve/azrcrv-maintenance-mode/releases/download/v1.4.0/azrcrv-maintenance-mode.zip
+Download link:	https://github.com/azurecurve/azrcrv-maintenance-mode/releases/download/v1.0.0/azrcrv-maintenance-mode.zip
+Donate link:	https://development.azurecurve.co.uk/support-development/
 Requires PHP:	5.6
-Requires CP:	1.0
 Requires:		1.0.0
 Tested:			4.9.99
 Text Domain:	azrcrv-mm
-Domain Path:	/languages
+Domain Path:	/assets/languages
 License: 		GPLv2 or later
 License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,10 +32,10 @@ This plugin is multisite compatible with each site having its own settings.
 
 # Installation Instructions
 
-* Download the latest release of the plugin from [GitHub](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/latest/).
-* Upload the entire zip file using the Plugins upload function in your ClassicPress admin panel.
-* Activate the plugin.
-* Configure settings.
+ * Download the latest release of the plugin from [GitHub](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/latest/).
+ * Upload the entire zip file using the Plugins upload function in your ClassicPress admin panel.
+ * Activate the plugin.
+ * Configure relevant settings via the configuration page in the admin control panel (azurecurve menu).
 
 == Frequently Asked Questions ==
 
@@ -50,6 +50,13 @@ This plugin is developed for ClassicPress, but will likely work on WordPress.
 == Changelog ==
 
 # Changelog
+ 
+### [Version 2.0.0](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/tag/v2.0.0)
+ * Refactor code to use namespace, improve security and improve maintainability.
+ * Update language file.
+ * Update readme txt and md files.
+ * Update Update Manager to version 2.4.3.
+ * Update to only enqueue frontend styes if maintenance mode enabled.
  
 ### [Version 1.4.0](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/tag/v1.4.0)
  * Add option to disable admin banner.
@@ -90,7 +97,7 @@ This plugin is developed for ClassicPress, but will likely work on WordPress.
 
 # About azurecurve
 
-**azurecurve** was one of the first plugin developers to start developing for ClassicPress; all plugins are available from [azurecurve Development](https://development.azurecurve.co.uk/) and are integrated with the [Update Manager plugin](https://directory.classicpress.net/plugins/update-manager) for fully integrated, no hassle, updates.
+**azurecurve** was one of the first plugin developers to start developing for Classicpress; all plugins are available from [azurecurve Development](https://development.azurecurve.co.uk/) and are integrated with the [Update Manager plugin](https://directory.classicpress.net/plugins/update-manager) for fully integrated, no hassle, updates.
 
 The other plugins available from **azurecurve** are:
  * Add Open Graph Tags - [details](https://development.azurecurve.co.uk/classicpress-plugins/add-open-graph-tags/) / [download](https://github.com/azurecurve/azrcrv-add-open-graph-tags/releases/latest/)
@@ -119,6 +126,7 @@ The other plugins available from **azurecurve** are:
  * Insult Generator - [details](https://development.azurecurve.co.uk/classicpress-plugins/insult-generator/) / [download](https://github.com/azurecurve/azrcrv-insult-generator/releases/latest/)
  * Load Admin CSS - [details](https://development.azurecurve.co.uk/classicpress-plugins/load-admin-css/) / [download](https://github.com/azurecurve/azrcrv-load-admin-css/releases/latest/)
  * Loop Injection - [details](https://development.azurecurve.co.uk/classicpress-plugins/loop-injection/) / [download](https://github.com/azurecurve/azrcrv-loop-injection/releases/latest/)
+ * Maintenance Mode - [details](https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/) / [download](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/latest/)
  * Markdown - [details](https://development.azurecurve.co.uk/classicpress-plugins/markdown/) / [download](https://github.com/azurecurve/azrcrv-markdown/releases/latest/)
  * Mobile Detection - [details](https://development.azurecurve.co.uk/classicpress-plugins/mobile-detection/) / [download](https://github.com/azurecurve/azrcrv-mobile-detection/releases/latest/)
  * Multisite Favicon - [details](https://development.azurecurve.co.uk/classicpress-plugins/multisite-favicon/) / [download](https://github.com/azurecurve/azrcrv-multisite-favicon/releases/latest/)

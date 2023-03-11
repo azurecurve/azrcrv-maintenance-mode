@@ -1,5 +1,5 @@
 # [Maintenance Mode](https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/)
-![Plugin Banner](/assets/pluginimages/banner-1544x500.png)
+![Plugin Banner](/assets/images/banner-1544x500.png)
 
 # Description
 
@@ -9,16 +9,18 @@ Users will only see the configured message; administrators will have full access
 
 This plugin is multisite compatible with each site having its own settings.
 
+This plugin is multisite compatible; each site will need settings to be configured in the admin dashboard.
+
 # Installation Instructions
 
-* Download the latest release of the plugin from [GitHub](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/latest/).
-* Upload the entire zip file using the Plugins upload function in your ClassicPress admin panel.
-* Activate the plugin.
-* Configure settings.
+ * Download the latest release of the plugin from [GitHub](https://github.com/azurecurve/azrcrv-xxxx/releases/latest/).
+ * Upload the entire zip file using the Plugins upload function in your ClassicPress admin panel.
+ * Activate the plugin.
+ * Configure relevant settings via the configuration page in the admin control panel (azurecurve menu).
+ 
+ # About azurecurve
 
-# About azurecurve
-
-**azurecurve** was one of the first plugin developers to start developing for ClassicPress; all plugins are available from [azurecurve Development](https://development.azurecurve.co.uk/) and are integrated with the [Update Manager plugin](https://directory.classicpress.net/plugins/update-manager) for fully integrated, no hassle, updates.
+**azurecurve** was one of the first plugin developers to start developing for Classicpress; all plugins are available from [azurecurve Development](https://development.azurecurve.co.uk/) and are integrated with the [Update Manager plugin](https://directory.classicpress.net/plugins/update-manager) for fully integrated, no hassle, updates.
 
 The other plugins available from **azurecurve** are:
  * Add Open Graph Tags - [details](https://development.azurecurve.co.uk/classicpress-plugins/add-open-graph-tags/) / [download](https://github.com/azurecurve/azrcrv-add-open-graph-tags/releases/latest/)
@@ -47,6 +49,7 @@ The other plugins available from **azurecurve** are:
  * Insult Generator - [details](https://development.azurecurve.co.uk/classicpress-plugins/insult-generator/) / [download](https://github.com/azurecurve/azrcrv-insult-generator/releases/latest/)
  * Load Admin CSS - [details](https://development.azurecurve.co.uk/classicpress-plugins/load-admin-css/) / [download](https://github.com/azurecurve/azrcrv-load-admin-css/releases/latest/)
  * Loop Injection - [details](https://development.azurecurve.co.uk/classicpress-plugins/loop-injection/) / [download](https://github.com/azurecurve/azrcrv-loop-injection/releases/latest/)
+ * Maintenance Mode - [details](https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/) / [download](https://github.com/azurecurve/azrcrv-maintenance-mode/releases/latest/)
  * Markdown - [details](https://development.azurecurve.co.uk/classicpress-plugins/markdown/) / [download](https://github.com/azurecurve/azrcrv-markdown/releases/latest/)
  * Mobile Detection - [details](https://development.azurecurve.co.uk/classicpress-plugins/mobile-detection/) / [download](https://github.com/azurecurve/azrcrv-mobile-detection/releases/latest/)
  * Multisite Favicon - [details](https://development.azurecurve.co.uk/classicpress-plugins/multisite-favicon/) / [download](https://github.com/azurecurve/azrcrv-multisite-favicon/releases/latest/)
@@ -75,4 +78,3 @@ The other plugins available from **azurecurve** are:
  * URL Shortener - [details](https://development.azurecurve.co.uk/classicpress-plugins/url-shortener/) / [download](https://github.com/azurecurve/azrcrv-url-shortener/releases/latest/)
  * Username Protection - [details](https://development.azurecurve.co.uk/classicpress-plugins/username-protection/) / [download](https://github.com/azurecurve/azrcrv-username-protection/releases/latest/)
  * Widget Announcements - [details](https://development.azurecurve.co.uk/classicpress-plugins/widget-announcements/) / [download](https://github.com/azurecurve/azrcrv-widget-announcements/releases/latest/)
- 

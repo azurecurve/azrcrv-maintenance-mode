@@ -3,8 +3,9 @@
  * ------------------------------------------------------------------------------
  * Plugin Name:		Maintenance Mode
  * Description:		Switches the site into maintenance mode for users, but allows admins to view as normal; messages are displayed to users and admins.
- * Version:			2.0.2
+ * Version:			2.0.3
  * Requires CP:		1.0
+ * Requires PHP:	7.4
  * Author:			azurecurve
  * Author URI:		https://development.azurecurve.co.uk/classicpress-plugins/
  * Plugin URI:		https://development.azurecurve.co.uk/classicpress-plugins/maintenance-mode/

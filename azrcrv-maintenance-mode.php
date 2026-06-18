@@ -36,7 +36,7 @@ const DEVELOPER_RAW_LINK  = 'https://development.azurecurve.co.uk/classicpress-p
 const DEVELOPER_LINK      = '<a href="' . DEVELOPER_RAW_LINK . '">' . DEVELOPER_NAME . '</a>';
 
 const PLUGIN_NAME       = 'Maintenance Mode';
-const PLUGIN_SHORT_SLUG = 'azrcrv-mmm';
+const PLUGIN_SHORT_SLUG = 'maintenance-mode';
 const PLUGIN_SLUG       = 'azrcrv-' . PLUGIN_SHORT_SLUG;
 const PLUGIN_HYPHEN     = 'azrcrv-mm';
 const PLUGIN_UNDERSCORE = 'azrcrv_mm';

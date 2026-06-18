@@ -43,7 +43,7 @@ function register_frontend_styles() {
  */
 function enqueue_frontend_styles() {
 
-	$options = get_option_with_defaults( 'azrcrv-mm' );
+	$options = get_option_with_defaults( PLUGIN_HYPHEN );
 	
 	if ( $options['enabled'] == 1 ) {
 		
